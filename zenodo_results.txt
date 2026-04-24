@@ -1,0 +1,32 @@
+Zenodo Full Dataset XGBoost Results
+====================================
+Total frames : 172,161
+Train samples: 525,136 (after SMOTE)
+Test samples : 34,433
+Accuracy     : 59.53%
+
+Classification Report:
+                            precision    recall  f1-score   support
+
+Step 0: No washing / Other       0.91      0.54      0.68     16411
+      Step 1: Palm to palm       0.52      0.56      0.54      3516
+  Step 2: Palm over dorsum       0.66      0.75      0.70      3720
+Step 3: Fingers interlaced       0.44      0.56      0.49      2609
+  Step 4: Backs of fingers       0.50      0.76      0.60      2085
+  Step 5: Rotational thumb       0.37      0.58      0.45      2701
+Step 6: Fingertips to palm       0.49      0.65      0.56      2404
+Step 7: Wrist / faucet off       0.23      0.60      0.33       987
+
+                  accuracy                           0.60     34433
+                 macro avg       0.51      0.63      0.55     34433
+              weighted avg       0.69      0.60      0.61     34433
+
+
+Comparison:
+  Logistic Regression (3-view): ~81.00%
+  SVM (3-view):                ~87.00%
+  CNN+Transformer (3-view):    ~93.00%
+  CNN+LSTM (3-view):           ~94.00%
+  XGBoost SMOTE (3-view):      ~97.00%
+  XGBoost Personalised:         96.75%
+  XGBoost Zenodo (full):        59.53%

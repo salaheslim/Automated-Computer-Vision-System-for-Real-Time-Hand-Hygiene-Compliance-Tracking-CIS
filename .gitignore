@@ -1,0 +1,14 @@
+env_tensorflow/
+env_xgboost/
+my_data/
+my_data_orbbec/
+orbbec_recordings/
+view1/
+view2/
+view3/
+zenodo_landmarks.csv
+__pycache__/
+*.pyc
+Log/
+yolo_bilstm/data_processed/
+yolo_bilstm/data_who_yolo/
